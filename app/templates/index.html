@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Washington Capitals Webscraper</title>
+</head>
+<body>
+<p>Washington Capitals Roster, November 2019</p>
+    {% for player in players %}
+        <p>
+            {{ player.firstName }} {{ player.lastName }} {{ player.special }}<br>
+            Number: {{ player.number }} &nbsp;
+            Position: {{ player.position }} &nbsp;
+            Shoots: {{ player.shoots }} &nbsp;
+            Height: {{ player.height }} &nbsp;
+            Weight: {{ player.weight }}
+        </p>
+    {% endfor %}
+</br>
+
+
+</body>
+</html>

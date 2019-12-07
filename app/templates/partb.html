@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Washington Capitals Webscraper</title>
+</head>
+<body>
+<h1>Washington Capitals Roster, November 2019</h1>
+<h3>Offense</h3>
+    {% for player in sortedPlayers["offense"] %}
+    <p>
+        {{ player[0] }}, {{ player[1] }} {{ player[2] }}<br>
+        Number: {{ player[3] }} &nbsp;
+        Position: {{ player[4] }} &nbsp;
+        Shoots: {{ player[5] }} &nbsp;
+        Height: {{ player[6] }} &nbsp;
+        Weight: {{ player[7] }}
+    </p>
+    {% endfor %}
+
+<h3>Defense</h3>
+    {% for player in sortedPlayers["defense"] %}
+    <p>
+        {{ player[0] }}, {{ player[1] }} {{ player[2] }}<br>
+        Number: {{ player[3] }} &nbsp;
+        Position: {{ player[4] }} &nbsp;
+        Shoots: {{ player[5] }} &nbsp;
+        Height: {{ player[6] }} &nbsp;
+        Weight: {{ player[7] }}
+    </p>
+    {% endfor %}
+
+<h3>Goalies</h3>
+    {% for player in sortedPlayers["goalies"] %}
+    <p>
+        {{ player[0] }}, {{ player[1] }} {{ player[2] }}<br>
+        Number: {{ player[3] }} &nbsp;
+        Position: {{ player[4] }} &nbsp;
+        Shoots: {{ player[5] }} &nbsp;
+        Height: {{ player[6] }} &nbsp;
+        Weight: {{ player[7] }}
+    </p>
+    {% endfor %}
+
+</body>
+</html>
